@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exam layout</title>
+    <style>
+        html{
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+     .header{
+        display:flex;
+        justify-content: space-between;
+        .head2{
+            margin-top:20px;
+            color:aqua;
+            display:flex;
+            gap:10px;
+        }
+     }
+     .grid-main{
+        width:100vw;
+        height:auto;
+        display:grid;
+        grid-template-columns: repeat(3,1fr);
+        gap:20px;
+      
+        grid-auto-rows:100px;
+        /* background-color: rgb(116, 155, 171); */
+        .grid-main-sec{
+            grid-column: 1/3;
+            grid-row: 1/4;
+            border-radius: 20px;
+            background-color: rgb(116, 155, 171);
+            display:grid;
+            /* gap: 20px; */
+           .grid-main-1{
+            display:flex;
+            gap:50px;
+            .middle{
+                display:flex;
+                justify-content: center;
+                align-items:center;
+                width:50px;
+                height: 20px;
+                color:red;
+                background:rgb(167, 101, 101);
+                border-radius:10px;
+            }
+           }
+           .button{
+            color:white;
+            font-weight: bolder;
+            width:100px;
+            height:30px;
+            border:0px solid black;
+            border-radius: 10px;;
+            background-color: rgb(85, 18, 148);
+           }
+           .view-button{
+             color:rgb(11, 11, 11);
+            font-weight: bolder;
+            width:150px;
+            height:30px;
+            border:0px solid black;
+            border-radius: 10px;;
+            background-color: rgb(245, 241, 248);
+
+           }
+          
+       
+
+        }
+        .grid-main-black{
+            grid-column: 3/4;
+            grid-row: 1/4;
+            background-color: #070707;
+            color:white;
+            display:grid;
+            border-radius:10px;
+            gap:5px;
+           
+          
+            
+
+        }
+
+        
+     }
+     .details{
+        display:flex;
+        justify-content: space-between;
+        background-color: #322e2e;
+        border-radius: 10px;
+        border:2px solid white;
+        align-items: center;
+        
+        height:30px;
+     
+       
+     }
+     .bold{
+        font-weight: bolder;
+     }
+     .like-flex{
+        display:flex;
+        width:100vw;
+        justify-content: space-between;
+        gap:10px;
+        margin-top:20px;
+        .inside
+        {
+            width:500px;
+            border:2px solid black;
+            border-radius: 10px;;
+        }
+     }
+     .last-grid{
+        margin-top:20px;
+        width:100vw;
+        display:grid;
+        grid-template-columns: repeat(4,1fr);
+        grid-auto-rows:100px;
+        border-radius: 10px;
+
+     }
+     .last-grid-1
+     {
+        grid-column: 1/3;
+        grid-row:1/5;
+        border:2px solid black;
+        border-radius: 10px;
+     
+
+     }
+     .last-grid-box{
+       display:flex;
+       gap:10px;
+        
+     }
+     .last-grid-box1
+     {
+      width:400px;
+      border:2px solid black;
+      border-radius:10px;
+      margin: 10px;
+     }
+     .last-one{
+        display:flex;
+         gap:10px;
+     }
+     .last{
+        margin-left:10px;
+       grid-column: 3/5;
+       grid-row:1/5;
+       border: 2px solid rgb(40, 36, 36);
+       border-radius: 10px;
+       
+        
+       .last-s-flex{
+        display:flex;
+        gap:10px;
+        
+        height:50px;
+        
+        .no{
+        width:50px;
+        height: 50px;
+        background-color: #5d3f6f;
+        color:#2c714c;
+        font-weight:bolder;
+        font-size: 20px;
+        margin-top:0px;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        border-radius:10px;
+        
+       }
+       }
+     }
+     .cont{
+        border:2px solid rgb(38, 36, 36);
+        width:700px;
+        line-height: 1px;
+        border-radius:10px;
+     }
+     .n{
+        display:grid;
+        gap:10px;
+   
+     }
+     .l{
+        font-weight: bolder;
+     }
+
+     
+
+
+    </style>
+</head>
+<body>
+     <div class="header">
+        <div class="head1">
+            <h1>Campus Design Forum</h1>
+            <p>A compact print-friendly layout for layout and styling practice</p>
+        </div>
+       
+        <div class="head2">
+            <p>Time:1Hour</p>
+            <p>Total Marks:20</p>
+            <p>Single Page Output</p>
+        </div>
+     </div>
+     <hr color="lightgrey">  
+     
+     <div class="grid-main">
+        <div class="grid-main-sec">
+            <div class="grid-main-1">
+                <p>Event</p>
+                <p class="middle">Design</p>
+                <p>Print</p>
+            </div>
+            <h2>Design a clean event page for a college workshop</h2>
+            <p>create a polished card-style layout that presents workshop details highlights and a short schdulee .the page should look neat in a printed test paper and should clearly show spcaing ,alignment and hierarchy</p>
+            <div>
+            <button class="button">Register</button>
+            <button class="view-button">view Schedule</button>
+            </div>
+        </div>
+         <div class="grid-main-black">
+            <h2>Workshop Details</h2>
+            <div class="details">
+                <p>Time</p>
+            <p class="bold">10:00AM</p></div>
+            <div class="details">
+                <p>Venue</p>
+            <p class="bold">Coomputer lab 2</p></div>
+            <div class="details">
+                <p>Topic</p>
+            <p class="bold">Responsive Layout</p></div>
+            <div class="details">
+                <p>Date</p>
+            <p class="bold">25 July 2025</p></div>
+           
+         </div>
+     </div>
+     <div class="like-flex">
+        <div class="inside">
+            <p class="l">01</p>
+            <p>Health with title and chips</p>
+        </div>
+        <div class="inside">
+            <p class="l">02</p>
+            <p>Two -columns hero area with buttons</p>
+        </div>
+        <div class="inside">
+            <p class="l">03</p>
+            <p>info panels and content cards</p>
+        </div>
+        <div class="inside">
+            <p class="l">04</p>
+            <p>Clean outputs for screenshot</p>
+        </div>
+     </div>
+     
+     <div class="last-grid">
+
+        
+        <div class="last-grid-1">
+            <h1>What to Include</h1>
+            <div class="last-grid-box"><div class="last-grid-box1"><p class="l">Workshop theme</p>
+            <p>Keep the content real and simple like a collgee event or student program</p></div>
+             <div class="last-grid-box1"><p class="l">Clear spacing</p>
+            <p>Use padding,amrgin and border radius properly so the page feels balanced</p></div>
+             </div>
+             <div class="last-one">
+           <div class="last-grid-box1"><p class="l">Visual contrast</p>
+            <p>Use heading,color blocs, and soft shadows  to seperate the sections</p></div>
+             <div class="last-grid-box1"><p class="l">Neat alignment</p>
+            <p>Keep everything align in rows and columns for a polisdhed printed look</p>
+        </div>
+        </div>
+        </div>
+            <div class="last">
+        <h3>Shorts Schedule</h3>
+        <div class="n">
+        <div class="last-s-flex">
+            <p class="no">1</p>
+            <div class="cont">
+               <p>Welcome session</p>
+               <p>introduction to the workshop and objectivees</p>
+            </div>
+           
+            </div>
+             <div class="last-s-flex">
+            <p class="no">2</p>
+            <div class="cont">
+               <p>Live demo</p>
+               <p>Build a simple responsive layout step by step </p>
+            </div>
+           
+            </div>
+              <div class="last-s-flex">
+            <p class="no">3</p>
+            <div class="cont">
+               <p>Practice task</p>
+               <p>Create a small page using the same structure</p>
+            </div>
+           
+            </div>
+
+              <div class="last-s-flex">
+            <p class="no">4</p>
+            <div class="cont">
+               <p>Review and submit</p>
+               <p>Take a screenshot and attach it to the answer sheet</p>
+            </div>
+           
+            </div>
+            </div>
+             
+        </div>
+        </div>
+        </div>  
+</body>
+</html>
